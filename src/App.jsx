@@ -1,9 +1,9 @@
 import React,{ useContext, useState } from 'react';
 import './App.css';
 import Home from './Home';
-import FunctionContextComponent from './functionContextcomponent';
-import ThemeContextProvider from './ThemeContextProvider';
-
+import FunctionContextComponent from './Context/functionContextcomponent';
+import ThemeContextProvider from './Context/ThemeContextProvider';
+import {createStore} from 'redux';
 
 
 
@@ -14,6 +14,7 @@ function App() {
    <ThemeContextProvider>
     <FunctionContextComponent />
    </ThemeContextProvider>
+
    </>
   );
 }
